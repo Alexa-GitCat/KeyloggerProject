@@ -28,11 +28,8 @@ def on_press(key):
         running = False
         return False #stop listener
 
-# start listening to the keyboard
-#"listener" object that monitors keyboard event.
-
 with keyboard.Listener(on_press=on_press) as listener:
     listener.join()
 
 listener.stop()
-listener.join() #starts the lisening
+listener.join() #starts the listening
